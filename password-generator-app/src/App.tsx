@@ -41,7 +41,7 @@ function App() {
     return (
         <main>
             <section className="w-[90%] max-w-[54rem] mx-auto text-center h-[63.2rem] sm:h-[54rem]">
-                <h1 className="text-grey font-bold text-[2.4rem] mt-[5rem] mb-[3.1rem] sm:mb-[1.6rem] sm:text-[1.6rem]">
+                <h1 className="text-grey font-bold text-[2.4rem] mt-[13.3rem] mb-[3.1rem] sm:mb-[1.6rem] sm:text-[1.6rem]">
                     Password Generator
                 </h1>
                 <div className="flex justify-between items-center bg-darkGrey p-[1.9rem] mb-[2.4rem] sm:mb-[1.6rem]">
@@ -76,9 +76,12 @@ function App() {
                 </div>
                 <div className="bg-darkGrey max-h-[52.8rem] min-h-[42.3rem] text-[1.8rem] sm:text-[1.6rem] p-[1.9rem]">
                     <div className="flex justify-between items-center mb-[1.6rem] sm:mb-[0.8rem]">
-                        <p className="text-almostWhite font-bold">
+                        <label
+                            className="text-almostWhite font-bold"
+                            htmlFor="password-length-range"
+                        >
                             Character Length
-                        </p>
+                        </label>
                         <p className="text-neonGreen font-bold text-[3.2rem]">
                             {characterLength}
                         </p>
@@ -182,9 +185,9 @@ function App() {
                         onClick={() => {
                             setPassword(generatePassword());
                         }}
-                        className="w-full flex justify-center items-center gap-[1.6rem] bg-neonGreen h-[6.5rem] sm:h-[5.6rem] hover:bg-darkGrey hover:text-neonGreen hover:border-2 hover:border-neonGreen"
+                        className="w-full flex justify-center items-center gap-[1.6rem] bg-neonGreen h-[6.5rem] sm:h-[5.6rem] font-bold text-[1.6rem] hover:bg-darkGrey hover:text-neonGreen hover:border-2 hover:border-neonGreen"
                     >
-                        <p className="font-bold text-[1.6rem]">GENERATE</p>
+                        Generate
                         <img
                             id="right-arrow-icon"
                             src={rightArrowIcon}
