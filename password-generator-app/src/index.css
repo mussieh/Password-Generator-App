@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#password-length-range {
+    width: 100%;
+    accent-color: #a4ffaf;
+}
+
+/* Special styling for WebKit/Blink */
+#password-length-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+#copy-icon:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+        hue-rotate(202deg) brightness(103%) contrast(111%);
+}
+
+#generate-btn:hover #right-arrow-icon {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(45%) saturate(807%)
+        hue-rotate(53deg) brightness(101%) contrast(102%);
+}
