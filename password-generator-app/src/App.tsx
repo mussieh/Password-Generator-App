@@ -48,8 +48,8 @@ function App() {
                     <input
                         placeholder="P4$5W0rD!"
                         value={password}
-                        disabled
-                        className="font-bold bg-darkGrey text-[3.2rem] sm:text-[2.4rem] text-almostWhite"
+                        spellCheck={false}
+                        className="font-bold bg-darkGrey text-[3.2rem] sm:text-[2.4rem] text-almostWhite outline-none caret-transparent"
                     />
                     <div className="flex gap-[1.6rem] flex-wrap items-center">
                         <p

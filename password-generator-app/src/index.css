@@ -19,7 +19,6 @@ html {
 
 /* Special styling for WebKit/Blink */
 #password-length-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
     cursor: pointer;
 }
 
